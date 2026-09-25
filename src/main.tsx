@@ -7,7 +7,7 @@ import { AppProvider } from './hooks/useApp.tsx';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <AppProvider>
         <App />
       </AppProvider>
